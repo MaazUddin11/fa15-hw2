@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
+  get "stringify", to: "pages_controller#stringify"
   root 'pages#home'
-  get 'age', to: 'pages#age'
+  get 'age', to: 'pages_controller#person'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
